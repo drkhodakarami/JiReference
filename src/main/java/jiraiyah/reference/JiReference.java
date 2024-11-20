@@ -2,7 +2,6 @@ package jiraiyah.reference;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import jiraiyah.logger.Logger;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.registry.RegistryKeys;
@@ -36,16 +35,6 @@ public class JiReference
      private final String modId;
 
      /**
-      * A `Logger` instance for logging messages within the mod.
-      *
-      * <p>This `Logger` is initialized with the mod's ID, ensuring that all log messages
-      * are prefixed with the mod's identifier. This helps in distinguishing log entries
-      * related to this mod from those of other mods or the base game, providing clarity
-      * and context in the logs.</p>
-      */
-     public final Logger LOGGER;
-
-     /**
       * Constructs a new `JiReference` instance with the specified mod ID.
       *
       * <p>This constructor initializes the `JiReference` object by setting the mod ID
@@ -59,7 +48,6 @@ public class JiReference
      public JiReference(String mod_ID)
      {
          this.modId = mod_ID;
-         this.LOGGER = new Logger(mod_ID);
      }
 
      /**

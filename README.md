@@ -22,7 +22,7 @@ In your main mod, you will extend this class, replace the ModID attribute with y
 This library is using repsy for maven publishing system. Follow the guideline bellow to make dependency for your mod.
 This library is depending on JiLogger Library so you should add it to your main mod too.
 
-### ➤ Latest Version: 1.0.0
+### ➤ Latest Version: 1.1.0
 
 First you need to add the maven to your `build.gradle` repositories:
 
